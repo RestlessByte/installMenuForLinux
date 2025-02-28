@@ -31,7 +31,7 @@ while true; do
             bash /home/$USER/toolsForLinuxInstallation/tools/script.sh
             ;;
         7)
-            exit 0
+            exit 1
             ;;
         *)
             echo "Invalid choice!"

@@ -14,7 +14,7 @@ while true; do
             open https://www.cursor.com/
             ;;
         3)
-            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            bash /home/$USER/installMenuForLinux/installation_menu.sh
             ;;
     esac
 done

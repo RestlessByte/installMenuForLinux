@@ -56,7 +56,7 @@ sudo ufw allow 5432/tcp
             ;;
         7)
             echo "Back to menu..."
-            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            bash /home/$USER/installMenuForLinux/installation_menu.sh
             ;;
         *)
             echo "Invalid choice!"

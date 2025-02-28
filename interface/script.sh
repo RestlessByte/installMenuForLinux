@@ -33,7 +33,7 @@ for i in $selection; do
             sudo apt install -y xfce4
             ;;
         8)
-            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            bash /home/$USER/installMenuForLinux/installation_menu.sh
             ;;
         *)
             echo 'Invalid choice!'

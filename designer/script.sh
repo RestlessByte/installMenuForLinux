@@ -27,7 +27,7 @@ for i in $selection; do
             xdg-open https://www.figma.com
             ;;
         5)
-            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            bash /home/$USER/installMenuForLinux/installation_menu.sh
             ;;
         *)
             echo "Invalid choice!"

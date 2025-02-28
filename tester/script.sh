@@ -22,7 +22,7 @@ for i in $selection; do
             sudo snap install postman
             ;;
         4)
-            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            bash /home/$USER/installMenuForLinux/installation_menu.sh
             ;;
         *)
             echo "Invalid choice!"
