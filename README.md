@@ -3,19 +3,21 @@
 
 ## 🔍 Installation
 
-```bash
-git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux.git
-```
-
-## 🚀 Usage
-### 😶‍🌫️ Clone repository in /home
+### 😶‍🌫️ Clone repository in /home [WORKER FOLDER]
 ```bash
 cd /home/$USER
 git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux.git
-alias installTools='bash /home/$USER/installation.sh'
+alias installTools(){
+    path=${pwd}
+    bash /home/$USER/toolsForLinuxInstallation/installation.sh
+    cd $path
+}
 source ~/.bashrc
 installTools
 ```
+
+
+## 🚀 Usage
 
 ## Example using
 ```bash
