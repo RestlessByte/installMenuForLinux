@@ -7,13 +7,15 @@
 ```bash
 cd /home/$USER
 git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux.git
-alias installTools(){
-    path=${pwd}
-    bash /home/$USER/toolsForLinuxInstallation/installation.sh
-    cd $path
+cat <<EOF >> ~/.bashrc
+tools() {
+    path="$(pwd)"
+    bash "/home/$USER/installation_menu.sh"
+    cd "$path"
 }
+EOF
 source ~/.bashrc
-installTools
+tools
 ```
 
 
