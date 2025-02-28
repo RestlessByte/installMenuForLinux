@@ -6,7 +6,8 @@ echo "2) Python"
 echo "3) PostgreSQL"
 echo "4) Docker"
 echo "5) Kubernetes"
-echo "6) Back to menu"
+echo "6) Bun [Need to install Node.js]"
+echo "7) Back to menu"
 echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
@@ -50,6 +51,11 @@ sudo ufw allow 5432/tcp
             sudo snap install kubectl --classic
             ;;
         6)
+            echo "Installing Bun..."
+            sudo apt update && sudo npm install -g bun
+            ;;
+        7)
+            echo "Back to menu..."
             bash /home/$USER/toolsForLinuxInstallation/menu.sh
             ;;
         *)
