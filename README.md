@@ -6,11 +6,11 @@
 ### 😶‍🌫️ Clone repository in /home [WORKER FOLDER]
 ```bash
 cd /home/$USER
-git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux.git
+git clone git@github.com:RestlessByte/installMenuForLinux.git
 cat <<EOF >> ~/.bashrc
 tools() {
     path="$(pwd)"
-    bash "/home/$USER/installation_menu.sh"
+    bash "/home/$USER/installMenuForLinux/installation_menu.sh"
     cd "$path"
 }
 EOF
