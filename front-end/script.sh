@@ -3,6 +3,7 @@ echo "You selected Front-end development"
 echo "Available packages:"
 echo "1) Node.js (with npm and yarn)"
 echo "2) Visual Studio Code"
+echo "3) Back to menu"
 echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
@@ -17,12 +18,7 @@ for i in $selection; do
             sudo snap install --classic code
             ;;
         3)
-            echo "Установка React..."
-            sudo npm install -g create-react-app
-            ;;
-        4)
-            echo "Установка Angular..."
-            sudo npm install -g @angular/cli
+            bash /home/$USER/toolsForLinuxInstallation/menu.sh
             ;;
         *)
             echo "Неверный выбор!"
