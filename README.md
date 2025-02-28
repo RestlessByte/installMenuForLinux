@@ -10,7 +10,7 @@ git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux
 
 ```bash
 git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux.git
-alias installTools='bash /home/$USER/toolsForLinuxInstallation/menu.sh'
+alias installTools='bash /home/$USER/toolsForLinuxInstallation/installation.sh'
 source ~/.bashrc
 installTools
 ```
@@ -18,7 +18,7 @@ installTools
 ## Example using
 ```bash
 git clone git@github.com:RestlessByte/RestlessByte-Dev-ToolsInstallationForLinux.git
-alias installTools='bash /home/$USER/toolsForLinuxInstallation/menu.sh'
+alias installTools='bash /home/$USER/toolsForLinuxInstallation/installation.sh'
 source ~/.bashrc
 installTools
 ```
