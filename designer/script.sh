@@ -5,6 +5,7 @@ echo "1) GIMP"
 echo "2) Inkscape"
 echo "3) Blender"
 echo "4) Figma (through browser)"
+echo "5) Back to menu"
 echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
@@ -25,8 +26,11 @@ for i in $selection; do
             echo "Открытие Figma в браузере..."
             xdg-open https://www.figma.com
             ;;
+        5)
+            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            ;;
         *)
-            echo "Неверный выбор!"
+            echo "Invalid choice!"
             ;;
     esac
 done

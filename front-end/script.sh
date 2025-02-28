@@ -3,8 +3,6 @@ echo "You selected Front-end development"
 echo "Available packages:"
 echo "1) Node.js (with npm and yarn)"
 echo "2) Visual Studio Code"
-echo "3) React"
-echo "4) Angular"
 echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do

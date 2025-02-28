@@ -6,20 +6,21 @@ echo "2) Python"
 echo "3) PostgreSQL"
 echo "4) Docker"
 echo "5) Kubernetes"
+echo "6) Back to menu"
 echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
     case $i in
         1)
-            echo "Установка Node.js..."
+            echo "Installation Node.js..."
             sudo apt update && sudo apt install -y nodejs npm
             ;;
         2)
-            echo "Установка Python..."
+            echo "Installation Python..."
             sudo apt update && sudo apt install -y python3 python3-pip
             ;;
         3)
-            echo "Установка PostgreSQL..."
+            echo "Installation PostgreSQL..."
             # Обновление списка пакетов
 sudo apt update
 
@@ -35,37 +36,24 @@ sudo apt install -y wget gnupg
 
 # Перезапускаем сервер PostgreSQL
 sudo systemctl restart postgresql
-# Перейти в папку с конфигурацией PostgreSQL
-cd /etc/postgresql/17/main
-
-# Разрешить подключения со всех адресов
-sudo sed -i "s/^#listen_addresses.*/listen_addresses = '*'/" postgresql.conf
-
-# Добавить правило в pg_hba.conf для подключения с любого IP-адреса
-echo "host    all    all    0.0.0.0/0    md5" | sudo tee -a pg_hba.conf
-
-# Перезапустить PostgreSQL, чтобы применить изменения
-sudo systemctl restart postgresql
-
 # Разрешить порт 5432 в файрволе
 sudo ufw allow 5432/tcp
-
-# Проверить статус PostgreSQL
-sudo systemctl status postgresql
-
             ;;
         4)
-            echo "Установка Docker..."
+            echo "Installing Docker..."
             sudo apt update && sudo apt install -y docker.io
             sudo systemctl start docker
             sudo systemctl enable docker
             ;;
         5)
-            echo "Установка Kubernetes..."
+            echo "Installing Kubernetes..."
             sudo snap install kubectl --classic
             ;;
+        6)
+            bash /home/$USER/toolsForLinuxInstallation/menu.sh
+            ;;
         *)
-            echo "Неверный выбор!"
+            echo "Invalid choice!"
             ;;
     esac
 done

@@ -1,33 +1,40 @@
 #!/bin/bash
 
 while true; do
-    echo "Выберите профессию для установки пакетов:"
-    echo "1) Back-end разработка"
-    echo "2) Front-end разработка"
-    echo "3) Тестирование"
-    echo "4) Дизайн"
-    echo "5) Выход"
+    echo "Select a profession to install packages:"
+    echo "1) Back-end development"
+    echo "2) Front-end development"
+    echo "3) Tester"
+    echo "4) Designer"
+    echo "5) Installation IDE"
+    echo "6) Installation tools for Linux"
+    echo "7) Exit"
     read -r profession
 
     case $profession in
         1)
-            bash /home/$USER/toolsForLinuxInstallation/back-end/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/back-end/script.sh
             ;;
         2)
-            bash /home/$USER/toolsForLinuxInstallation/front-end/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/front-end/script.sh
             ;;
         3)
-            bash /home/$USER/toolsForLinuxInstallation/tester/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/tester/script.sh
             ;;
         4)
-            bash /home/$USER/toolsForLinuxInstallation/designer/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/designer/script.sh
             ;;
         5)
-            echo "Выход из программы."
+            bash /home/$USER/toolsForLinuxInstallation/IDE/script.sh
+            ;;
+        6)
+            bash /home/$USER/toolsForLinuxInstallation/tools/script.sh
+            ;;
+        7)
             exit 0
             ;;
         *)
-            echo "Неверный выбор!"
+            echo "Invalid choice!"
             ;;
     esac
 done
