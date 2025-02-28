@@ -7,7 +7,11 @@ read -r selection
 for i in $selection; do
     case $i in
         1)
-            path=$(pwd)/web
+           
+            echo 'Write new name for project'
+            read -r name
+            name=${name}
+            path=$(pwd)/${name}
             cd $path
             bun init
             bun add nextjs pg dotenv
@@ -17,7 +21,10 @@ for i in $selection; do
             echo "web structure created"
             ;;
         2)
-            path=$(pwd)/backend
+            echo 'Write new name for project'
+            read -r name
+            name=${name}
+            path=$(pwd)/${name}
             cd $path
             bun init
             bun add nestjs pg dotenv child_process http https fs path os 

@@ -9,6 +9,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "nextjs": "^0.0.3"
+    "dotenv": "^16.4.7",
+    "nextjs": "^0.0.3",
+    "pg": "^8.13.3"
   }
 }
