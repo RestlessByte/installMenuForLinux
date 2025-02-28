@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "Вы выбрали Дизайн"
-echo "Доступные пакеты для установки: "
+echo "You selected Design"
+echo "Available packages:"
 echo "1) GIMP"
 echo "2) Inkscape"
 echo "3) Blender"
-echo "4) Figma (через браузер)"
-echo "Введите номера пакетов через пробел (например, 1 2 3): "
+echo "4) Figma (through browser)"
+echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
     case $i in

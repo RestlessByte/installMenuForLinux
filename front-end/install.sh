@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "Вы выбрали Front-end разработку"
-echo "Доступные пакеты для установки: "
-echo "1) Node.js (с npm и yarn)"
+echo "You selected Front-end development"
+echo "Available packages:"
+echo "1) Node.js (with npm and yarn)"
 echo "2) Visual Studio Code"
 echo "3) React"
 echo "4) Angular"
-echo "Введите номера пакетов через пробел (например, 1 2 3): "
+echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
     case $i in

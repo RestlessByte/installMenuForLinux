@@ -11,16 +11,16 @@ while true; do
 
     case $profession in
         1)
-            bash /home/localhost/main/bash/install/back-end/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/back-end/install.sh
             ;;
         2)
-            bash /home/localhost/main/bash/install/front-end/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/front-end/install.sh
             ;;
         3)
-            bash /home/localhost/main/bash/install/tester/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/tester/install.sh
             ;;
         4)
-            bash /home/localhost/main/bash/install/designer/install.sh
+            bash /home/$USER/toolsForLinuxInstallation/designer/install.sh
             ;;
         5)
             echo "Выход из программы."

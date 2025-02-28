@@ -1,12 +1,12 @@
 #!/bin/bash
-echo "Вы выбрали Back-end разработку"
-echo "Доступные пакеты для установки: "
+echo "You selected Back-end development"
+echo "Available packages:"
 echo "1) Node.js"
 echo "2) Python"
 echo "3) PostgreSQL"
 echo "4) Docker"
 echo "5) Kubernetes"
-echo "Введите номера пакетов через пробел (например, 1 2 3): "
+echo "Enter the numbers of packages separated by a space (for example, 1 2 3): "
 read -r selection
 for i in $selection; do
     case $i in
