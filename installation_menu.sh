@@ -13,22 +13,22 @@ while true; do
 
     case $profession in
         1)
-            bash /home/$USER/toolsForLinuxInstallation/back-end/script.sh
+            bash /home/$USER/installMenuForLinux/back-end/script.sh
             ;;
         2)
-            bash /home/$USER/toolsForLinuxInstallation/front-end/script.sh
+            bash /home/$USER/installMenuForLinux/front-end/script.sh
             ;;
         3)
-            bash /home/$USER/toolsForLinuxInstallation/tester/script.sh
+            bash /home/$USER/installMenuForLinux/tester/script.sh
             ;;
         4)
-            bash /home/$USER/toolsForLinuxInstallation/designer/script.sh
+            bash /home/$USER/installMenuForLinux/designer/script.sh
             ;;
         5)
-            bash /home/$USER/toolsForLinuxInstallation/IDE/script.sh
+            bash /home/$USER/installMenuForLinux/IDE/script.sh
             ;;
         6)
-            bash /home/$USER/toolsForLinuxInstallation/tools/script.sh
+            bash /home/$USER/installMenuForLinux/tools/script.sh
             ;;
         7)
             exit 1
